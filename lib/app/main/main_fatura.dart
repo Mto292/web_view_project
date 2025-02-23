@@ -7,8 +7,8 @@ import 'bootstrap/bootstrap.dart';
 /// product ortamı
 ///
 /// COMMAND LINE örneği
-/// flutter run --flavor product lib/app/main/main_fatura.dart
-/// flutter build apk --release --flavor product lib/app/main/main_fatura.dart
+/// flutter run --flavor fatura lib/app/main/main_fatura.dart
+/// flutter build apk --release --flavor fatura lib/app/main/main_fatura.dart
 /// flutter build appbundle --release --flavor fatura lib/app/main/main_fatura.dart
 void main() {
   environment = AppEnvironment.Production;
