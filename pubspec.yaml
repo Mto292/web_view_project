@@ -2,7 +2,7 @@ name: flutter_base_project
 description: A new Flutter project.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+1
+version: 1.0.2+3
 
 environment:
   flutter: 3.7.10
@@ -21,8 +21,9 @@ dependencies:
   # Network
   http: ^1.2.2
   connectivity: ^3.0.6
-  webview_flutter: ^4.8.0
   android_id: ^0.4.0
+  webview_flutter: ^4.8.0
+  webview_flutter_wkwebview: 3.17.0 # webview_flutter tarafından kullanılmakta ama son versiyon 3.18.0 olanda ios ta uygulamayı patlattığı için bu 3.17.0 versiyon sabitlendi daha sonra daha yeni versiyonlara geçilebilir
 
   # UI
   cupertino_icons: ^1.0.8
