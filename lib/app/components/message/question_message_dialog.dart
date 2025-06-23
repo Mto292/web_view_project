@@ -1,8 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_base_project/app/extensions/widgets_scale_extension.dart';
 import 'package:flutter_base_project/core/i10n/i10n.dart';
 import '../../constants/other/padding_and_radius_size.dart';
-import '../../constants/assets/assets.gen.dart';
 import 'package:flutter_base_project/app/navigation/route/route_factory.dart';
 import '../../theme/text_style/text_style.dart';
 import '../button/app_outline_button.dart';
@@ -30,9 +30,10 @@ class QuestionMessageDialog<T> extends DialogWidget<T> {
       mainAxisSize: MainAxisSize.min,
       children: [
         const SizedBox(height: paddingM),
-        Assets.icons.outlineErrorIcon.svg(
-          color: Theme.of(context).colorScheme.secondary,
-          height: 63.horizontalScale,
+        Icon(
+          CupertinoIcons.info,
+          color: Colors.amberAccent,
+          size: 63.horizontalScale,
         ),
         const SizedBox(height: paddingM),
         Text(

@@ -1,18 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:get/get.dart';
-import '../../../../app/components/other_widgets/web_view.dart';
+import '../../../../app/components/other_widgets/in_app_web_view.dart';
 import '../../../../app/constants/app/http_url.dart';
 import '../controller/landing_controller.dart';
 
 class Landing extends StatelessWidget {
-  const Landing({Key? key}) : super(key: key);
+  final LandingController controller;
+
+  const Landing({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.find<LandingController>();
-    return MyWebView(
+    return MyInWebView(
       showAppBar: false,
       url: HttpUrl.baseUrl,
     );

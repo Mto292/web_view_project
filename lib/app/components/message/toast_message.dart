@@ -28,7 +28,6 @@ void showDoneToastMessage(String text, {int? duration}) {
       textMessage: text,
       backgroundColor: AppColors.green.shade200,
       primaryColor: AppColors.green.shade800,
-      svgStr: Assets.icons.circleDoneIcon.path,
     ),
   );
 }
@@ -40,7 +39,6 @@ void showWarningToastMessage(String text, {int? duration}) {
       textMessage: text,
       backgroundColor: const Color(0xffFFFCF2),
       primaryColor: const Color(0xffFDB022),
-      svgStr: Assets.icons.warningIcon.path,
     ),
   );
 }
@@ -52,7 +50,6 @@ void showErrorToastMessage(String text, {int? duration}) {
       textMessage: text,
       backgroundColor: const Color(0xffFFF9F9),
       primaryColor: Theme.of(MyRouteFactory.context).colorScheme.error,
-      svgStr: Assets.icons.errorIcon.path,
     ),
   );
 }
@@ -61,14 +58,12 @@ class _ToastWidget extends StatelessWidget {
   final String textMessage;
   final Color backgroundColor;
   final Color primaryColor;
-  final String svgStr;
 
   const _ToastWidget({
     Key? key,
     required this.textMessage,
     required this.backgroundColor,
     required this.primaryColor,
-    required this.svgStr,
   }) : super(key: key);
 
   @override
@@ -96,11 +91,6 @@ class _ToastWidget extends StatelessWidget {
                   color: primaryColor,
                   borderRadius: BorderRadius.circular(radiusXXXXXXS),
                 ),
-              ),
-              const SizedBox(width: paddingXXS),
-              SvgPicture.asset(
-                svgStr,
-                width: 24.horizontalScale,
               ),
               const SizedBox(width: paddingM),
               Flexible(

@@ -1,0 +1,14 @@
+[
+  {
+    type: xhr,
+    url: https://bymfatura.com/accounting/api/inbox/downloadMedia/pdf,
+    method: POST,
+    body: {"documentUuid":"87730a71-348f-4188-82c7-d59cef65b7b5","year":2025,"month":5},
+    headers: {Accept: application/json, text/plain, */*, Content-Type: application/json;charset=UTF-8, Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvZXkyVndSUEZscVFBRGx3dG91MGFGOXMxbnJSbUwwQmUxb0FIOW56NkxGaTdZUjU3WjJYblR1QWlZSndiZmxqRHgvcXVKOUhXOUVDNWljTVdNWWM5VWhIeXlnb3RJa1hBa2JoMHJ4ajZYQTBpOGNBVVI3K0EwRVQzZFpjZE9YNUpRVjdlWmE2Wi95ZzBjaSs4aGhuNHc9PSIsImlhdCI6MTc1MDU5MzYzMSwiZXhwIjoxNzUwNjgwMDMxfQ.n67KgexGZfQQCQeYVduC3JxGyPf8I-SL1aMz2fkob90oLP8WY2kbohgZgY3w3qgUVvuwas9DhjT_NWFkg-UcVw}}]
+
+
+[{type: xhr,
+  url: https://bymfatura.com/accounting/api/inbox/downloadMedia/html,
+  method: POST,
+  body: {"documentUuid":"87730a71-348f-4188-82c7-d59cef65b7b5","year":2025,"month":5},
+  headers: {Accept: application/json, text/plain, */*, Content-Type: application/json;charset=UTF-8, Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvZXkyVndSUEZscVFBRGx3dG91MGFGOXMxbnJSbUwwQmUxb0FIOW56NkxGaTdZUjU3WjJYblR1QWlZSndiZmxqRHgvcXVKOUhXOUVDNWljTVdNWWM5VWhIeXlnb3RJa1hBa2JoMHJ4ajZYQTBpOGNBVVI3K0EwRVQzZFpjZE9YNUpRVjdlWmE2Wi95ZzBjaSs4aGhuNHc9PSIsImlhdCI6MTc1MDU5MzYzMSwiZXhwIjoxNzUwNjgwMDMxfQ.n67KgexGZfQQCQeYVduC3JxGyPf8I-SL1aMz2fkob90oLP8WY2kbohgZgY3w3qgUVvuwas9DhjT_NWFkg-UcVw}}]

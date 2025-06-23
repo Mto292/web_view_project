@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart' show Locale;
-import 'package:flutter_base_project/app/libs/locale_manager/locale_manager.dart';
 import 'package:flutter_base_project/core/i10n/lan/tr.dart';
 import '../../app/constants/enum/cache_key_enum.dart';
 import 'lan/en.dart';
@@ -25,12 +24,6 @@ List<Locale> get getSupportedLocalList => List.generate(
 /// cache te dil ayarları varsa çeker yoksa [kDefaultLocal] değerini alır
 Locale get getDefaultKeyFromCache {
   try {
-    String? lanCode = LocaleManager.instance.getStringValue(CacheKey.languageCode);
-    if (lanCode != null) return Locale(lanCode);
-
-    lanCode = Platform.localeName.split('_')[0];
-    if (supportedLocalization.containsKey(lanCode) == true) return Locale(lanCode);
-
     return Locale(kDefaultLocal.languageCode);
   } catch (e) {
     return Locale(kDefaultLocal.languageCode);

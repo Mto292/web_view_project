@@ -12,9 +12,10 @@ class LandingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder(
+      tag: UniqueKey().hashCode.toString(),
       init: LandingController(),
-      builder: (GetxController controller) {
-        return const Landing();
+      builder: (LandingController controller) {
+        return Landing(controller: controller);
       },
     );
   }

@@ -30,9 +30,7 @@ class LocalNotificationHandler {
 
   _initializeOtherPlatform() async {
     final flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
-    final initializationSettingsDarwin = DarwinInitializationSettings(
-      onDidReceiveLocalNotification: _onDidReceiveLocalNotification,
-    );
+    final initializationSettingsDarwin = DarwinInitializationSettings();
     final InitializationSettings initializationSettings = InitializationSettings(
       android: const AndroidInitializationSettings('app_icon'),
       iOS: initializationSettingsDarwin,

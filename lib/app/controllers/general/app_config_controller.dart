@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../../../core/i10n/default_localization.dart';
 import '../../constants/enum/cache_key_enum.dart';
 import '../../libs/app/sip_state.dart';
-import '../../libs/locale_manager/locale_manager.dart';
 
 class AppConfigController extends SipNotifier {
   Locale _locale = getDefaultKeyFromCache;
@@ -20,10 +19,6 @@ class AppConfigController extends SipNotifier {
     if (locale == _locale) return;
     locale = _locale;
     await Future.wait([
-      LocaleManager.instance.setStringValue(
-        CacheKey.languageCode,
-        locale.languageCode,
-      ),
       Future.delayed(const Duration(milliseconds: 200)),
     ]);
   }
